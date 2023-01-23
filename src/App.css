@@ -1,0 +1,27 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 0 auto;
+    width: 90%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(233, 233, 233);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 200ms ease-in-out, background-color 300ms;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    border-radius: 100%;
+}
